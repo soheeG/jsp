@@ -7,12 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Expression (표현식) </h1>
-	<p>출력(print) 메소드의 파라미터</p>
-	
-	<%= "hello" %>
-	
-	<%= 1 + 10 %>
-	
+	<%
+		String query = request.getParameter("q");
+		query = query == null ? "" : query;
+	%>
+	<h1><%= query %> 검색 결과</h1>
+
 </body>
 </html>

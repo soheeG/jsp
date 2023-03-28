@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+   <%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Expression (표현식) </h1>
-	<p>출력(print) 메소드의 파라미터</p>
+
+	<%
+	List list = List.of("html", "jsp", "spring");
+	%>
+	<p><%= list.get(0) %></p>
+	<p><%= list.get(1) %></p>
+	<p><%= list.get(2) %></p>
 	
-	<%= "hello" %>
-	
-	<%= 1 + 10 %>
-	
+
 </body>
 </html>

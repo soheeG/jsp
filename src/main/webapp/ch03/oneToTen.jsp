@@ -7,12 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Expression (표현식) </h1>
-	<p>출력(print) 메소드의 파라미터</p>
+	1부터 10까지의 합은
+	<%= 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 %>
 	
-	<%= "hello" %>
-	
-	<%= 1 + 10 %>
-	
+	<%
+	out.print(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 );
+	%>
 </body>
 </html>

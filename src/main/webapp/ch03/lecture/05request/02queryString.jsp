@@ -7,12 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Expression (표현식) </h1>
-	<p>출력(print) 메소드의 파라미터</p>
+	<h1>query string (쿼리스트링)</h1>
+	<p><%= request.getQueryString() %></p>
 	
-	<%= "hello" %>
 	
-	<%= 1 + 10 %>
+	<%
+	String qs = request.getQueryString();
 	
+	if (qs.contains("slamdunk")) {
+		out.println("슬램덩크 검색 결과");
+	}
+	%>
 </body>
 </html>

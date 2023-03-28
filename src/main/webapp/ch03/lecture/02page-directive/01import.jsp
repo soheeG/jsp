@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Expression (표현식) </h1>
-	<p>출력(print) 메소드의 파라미터</p>
-	
-	<%= "hello" %>
-	
-	<%= 1 + 10 %>
-	
+
+	<%
+	java.util.List list = java.util.List.of("java", "css", "jsp");
+	%>
+	<p><%= list.get(0) %></p>
+	<p><%= list.get(1) %></p>
+	<p><%= list.get(2) %></p>
 </body>
 </html>

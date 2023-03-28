@@ -7,12 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Expression (표현식) </h1>
-	<p>출력(print) 메소드의 파라미터</p>
-	
-	<%= "hello" %>
-	
-	<%= 1 + 10 %>
-	
+<%
+java.util.Calendar cal = java.util.Calendar.getInstance();
+%>
+오늘은
+<%= cal.get(java.util.Calendar.YEAR) %>년
 </body>
-</html>
+</html>=`12345678`134

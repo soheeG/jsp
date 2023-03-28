@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%!
+    public int multiply(int a, int b) {
+    	int c = a * b;
+    	return c;
+    }
+    %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +13,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Expression (표현식) </h1>
-	<p>출력(print) 메소드의 파라미터</p>
-	
-	<%= "hello" %>
-	
-	<%= 1 + 10 %>
-	
+	10 * 25 = <%= multiply(10, 25) %>
 </body>
 </html>

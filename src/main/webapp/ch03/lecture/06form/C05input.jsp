@@ -7,12 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Expression (표현식) </h1>
-	<p>출력(print) 메소드의 파라미터</p>
-	
-	<%= "hello" %>
-	
-	<%= 1 + 10 %>
-	
+	<h1>form 요소 연습</h1>
+	<form action="">
+		몇 줄> <input type="number" value="1" name="line" />
+		<input type="submit" value="그리기" />
+	</form>
 </body>
 </html>
