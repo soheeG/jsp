@@ -13,9 +13,9 @@
 	<!-- https://search.naver.com/search.naver 로 보내지도록 form 요소 작성 -->
 	
 	<form action="https://search.naver.com/search.naver">
-		<input type="text" name="movie">
+		<input type="text" name="query">
 		
-		<input type="submit" name="전송">
+		<input type="submit" value="전송">
 	</form>
 </body>
 </html>
