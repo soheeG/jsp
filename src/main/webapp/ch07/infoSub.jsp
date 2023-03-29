@@ -15,22 +15,22 @@
     			타입
     		</td>
     		<td>
-    			<b><%= type %></b>
+    			<%-- <b><%= type %></b> --%>
     		</td>
     	</tr>
     	<tr>
     		<td>
     			특징
     		</td>
-    		<td>
+<%--     		<td>
     			<% 
     			if (type.equals("A")) {
-    				out.println("강한 내구성");
+   				out.println("강한 내구성");
     			} else if (type.equals("B")){
     				out.println("뛰어난 대처 능력");
     			}
     			%>
-    		</td>
+    		</td> --%>
     	</tr>
     
     </table>
