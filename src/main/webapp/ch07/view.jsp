@@ -6,11 +6,11 @@
 	String viewPageURI = null;
 	
 	if (code.equals("A")) {
-		viewPageURI = "/viewModule/a.jsp";
+		viewPageURI = "/ch07/viewModule/a.jsp";
 	} else if (code.equals("B")) {
-		viewPageURI = "/viewModule/b.jsp";
+		viewPageURI = "/ch07/viewModule/b.jsp";
 	} else if (code.equals("C")) {
-		viewPageURI = "/viewModule/c.jsp";
+		viewPageURI = "/ch07/viewModule/c.jsp";
 	}
 %>
 

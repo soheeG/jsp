@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<form action=" /jsp/ch07/view.jsp">
+	<form action="<%= request.getContextPath() %>/ch07/view.jsp">
 	
 	보고 싶은 페이지 선택:
 		<select name="code"></select>
