@@ -3,5 +3,8 @@
 <%@ page import = "java.util.*" %>
 
 <%
-	response.sendRedirect("https://www.daum.net");
+// 05to.jsp로 다시 요청하라는 응답
+// 상태 코드: 302
+// Location : 05to.jsp
+response.sendRedirect("05to.jsp");
 %>

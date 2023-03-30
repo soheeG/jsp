@@ -8,9 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>2번 파일</h1>
-	<%
-	response.setHeader("my-header", "my-value");
-	%>
+	 <h1>07to.jsp 입니다.</h1>
+	 <%
+	 String name = (String) request.getAttribute("name");
+	 %>
+	 <h1>name 속성 : <%= name %></h1>
 </body>
 </html>

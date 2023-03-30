@@ -8,9 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>2번 파일</h1>
-	<%
-	response.setHeader("my-header", "my-value");
-	%>
+	<h1>05to.jsp 입니다.</h1>
 </body>
 </html>

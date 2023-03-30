@@ -3,5 +3,6 @@
 <%@ page import = "java.util.*" %>
 
 <%
-	response.sendRedirect("https://www.daum.net");
+request.setAttribute("name", "강백호");
+response.sendRedirect("07to.jsp");
 %>

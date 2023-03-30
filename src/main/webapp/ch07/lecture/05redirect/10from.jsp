@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import = "java.util.*" %>
 
-<%
-	response.sendRedirect("https://www.daum.net");
+<% 
+	String location = "11to.jsp?position=attack&name=backho&name=taewoong";
+	response.sendRedirect(location);
 %>

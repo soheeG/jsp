@@ -3,5 +3,6 @@
 <%@ page import = "java.util.*" %>
 
 <%
-	response.sendRedirect("https://www.daum.net");
+	String location = "09to.jsp?name=backho&address=seoul";
+	response.sendRedirect(location);
 %>
