@@ -8,6 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<div>
+	attr1 : <%= session.getAttribute("attr1") %>
+	</div>
+	<div>
+	attr2 : <%= application.getAttribute("attr2") %>
+	</div>
 </body>
 </html>
