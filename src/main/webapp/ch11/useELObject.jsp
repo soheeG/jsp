@@ -8,12 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>pageScope</h1>
-	<%
-	pageContext.setAttribute("attr1", "value1");
-	%>
-	
-	<p>${attr1 }</p>
-	<p>${pageScope.attr1 }</p>
+
 </body>
 </html>

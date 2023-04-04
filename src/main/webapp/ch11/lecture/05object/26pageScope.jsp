@@ -23,6 +23,6 @@
 	
 	<p>${key }</p>
 	<p>${attr1 }</p>
-	<p>{my-key</p>
+	<p>{my-key }</p>
 </body>
 </html>
