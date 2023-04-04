@@ -8,13 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>${pageContext.session.id }</p>
-	<p>${pageContext.session.creationTime }</p>
-	<p>${pageContext.session.lastAccessedTime }</p>
 	
-	<hr />
-	<h1>context path
-	<p>${pageContext.request.contextPath }</p></h1>
-	
+	<h1>연산 결과</h1>
+	<p>${paramValues.nums[0] } + ${paramValues.nums[1] } 
+		= ${paramValues.nums[0] + paramValues.nums[1] }</p>
 </body>
 </html>

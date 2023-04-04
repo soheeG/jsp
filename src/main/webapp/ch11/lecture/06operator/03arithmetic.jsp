@@ -9,13 +9,15 @@
 </head>
 <body>
 	<%
-	request.setAttribute("attr1", "value1");
-	request.setAttribute("my request attr", "value2");
+	pageContext.setAttribute("a", 12);
+	pageContext.setAttribute("b", 5);
 	%>
 	
-	<p>${attr1 }</p>
-	<p>${requestScope.attr1 }</p>
-	<%-- <p>${my request attr }</p> 사용 불가--%>
-	<p>${requestScope['my request attr'] }</p>
+	<p>${a + b }</p> <!-- 17 -->
+	<p>${a - b }</p> <!-- 7 -->
+	<p>${a * b }</p> <!-- 60 -->
+	<p>${a / b }</p> <!-- 2.4 -->
+	<p>${a % b }</p> <!-- 2 -->
+	<p>${a mod b }</p> <!-- 2 -->
 </body>
 </html>

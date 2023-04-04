@@ -8,13 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>${pageContext.session.id }</p>
-	<p>${pageContext.session.creationTime }</p>
-	<p>${pageContext.session.lastAccessedTime }</p>
+	<form action="05process.jsp" method="post">
+	수1 : <input type="text" name="numA" vaule="12" /> <br />
+	수2 : <input type="text" name="numB" vaule="5" /> <br/ >
 	
-	<hr />
-	<h1>context path
-	<p>${pageContext.request.contextPath }</p></h1>
-	
+	<input type="submit" value="산술 연산!" />
+	</form>
 </body>
 </html>
