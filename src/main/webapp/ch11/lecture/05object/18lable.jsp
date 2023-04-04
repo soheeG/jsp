@@ -14,10 +14,11 @@
 		<input type="text" id="input1" />
 		<br />
 		
+		<!-- (label[for=check$]+input#check$[type=checkbox]+br)*5 -->
 		<label for="check1">피자</label>
 		<input type="checkbox" id="check1" />
 		<br />
-		<label for="check2">케이크</label>
+		<label for="check2">케잌</label>
 		<input type="checkbox" id="check2" />
 		<br />
 		<label for="check3">비빔밥</label>
