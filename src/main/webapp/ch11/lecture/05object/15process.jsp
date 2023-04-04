@@ -8,12 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="11formProcess.jsp" method="post">
-		<input type="text" name="username" value="son" />
-		<br />
-		<input type="text" name="email" value="sony92@naver.com" />
-		<br />
-		<input type="submit" value="전송" />
-	</form>
+	<h1>15번 파일</h1>
+	<p>이름 : ${param.name }</p>
+	<p>취미 : 
+		<ul>
+			<li>${paramValues.hobby[0] }</li>
+			<li>${paramValues.hobby[1] }</li>
+			<li>${paramValues.hobby[2] }</li>
+			<li>${paramValues.hobby[3] }</li>
+		</ul>
+	</p>
 </body>
 </html>

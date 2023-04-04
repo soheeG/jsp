@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>param</h1>
-	<p>request parameter를 맵 타입으로 저장하고 있음</p>
+	<p>request parameter를 map 타입으로 저장하고 있음</p>
 	<!-- ?name=jisung&age=40&address=seoul -->
 	<p><%= request.getParameter("name") %></p>
 	<p><%= request.getParameter("age") %></p>
