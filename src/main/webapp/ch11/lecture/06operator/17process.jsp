@@ -8,14 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>${pageContext.session.id }</p>
-	<p>${pageContext.session.creationTime }</p>
-	<p>${pageContext.session.lastAccessedTime }</p>
-	
-	<hr />
-	
-	<h1>context path
-	<p>${pageContext.request.contextPath }</p></h1>
-	
+ 	<p>수1 : ${param.numA }</p>
+ 	<p>수2 : ${param.numB }</p>
+	<p>${((0 + param.numA) > (0 + param.numB)) ? '첫번째' : '두번째' } 수가 더 큽니다.</p>
 </body>
 </html>

@@ -8,14 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>${pageContext.session.id }</p>
-	<p>${pageContext.session.creationTime }</p>
-	<p>${pageContext.session.lastAccessedTime }</p>
+	<h3>not</h3>
+	<p>${! false }</p> <!-- true -->
+	<p>${! true }</p> <!-- false -->
 	
-	<hr />
-	
-	<h1>context path
-	<p>${pageContext.request.contextPath }</p></h1>
-	
+	<p>${not false }</p> <!-- true -->
+	<p>${not true }</p> <!-- false -->
 </body>
 </html>

@@ -8,14 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>${pageContext.session.id }</p>
-	<p>${pageContext.session.creationTime }</p>
-	<p>${pageContext.session.lastAccessedTime }</p>
-	
-	<hr />
-	
-	<h1>context path
-	<p>${pageContext.request.contextPath }</p></h1>
+	<h1>16번</h1>
+	<form action="17process.jsp">
+		수1 : <input type="text" name="numA" value="12" /> <br />
+		수2 : <input type="text" name="numB" value="5"/> <br />
+		<input type="submit" value="전송" />
+	</form>
 	
 </body>
 </html>

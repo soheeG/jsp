@@ -8,14 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>${pageContext.session.id }</p>
-	<p>${pageContext.session.creationTime }</p>
-	<p>${pageContext.session.lastAccessedTime }</p>
-	
-	<hr />
-	
-	<h1>context path
-	<p>${pageContext.request.contextPath }</p></h1>
-	
+	<h1>조건 연산(삼항 연산)</h1>
+	<%
+	pageContext.setAttribute("a", 3);
+	pageContext.setAttribute("b", 5);
+	%>
+	<p>${a < b ? '작다' : '크다' }</p>
 </body>
 </html>
