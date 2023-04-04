@@ -14,6 +14,5 @@
 		수2 : <input type="text" name="numB" value="5"/> <br />
 		<input type="submit" value="전송" />
 	</form>
-	
 </body>
 </html>
