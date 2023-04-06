@@ -11,12 +11,25 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
-	<!-- 손 <script>document.body.style.backgroundColor="red"</script> 흥민 -->
-	<h1>3번 파일</h1>
-	<form action="04process.jsp" method="post">
-		이름 : <input type="text" name="username" size="300"/>
-		<input type="submit" value="전송" />
-	</form>
+	
+	<div>
+		<a href="https://www.daum.net">다음</a>
+	</div>
+	<div>
+		<a href="https://www.daum.net">다음</a>
+	</div>
+	
+	</hr>
+	
+	<!-- page 영역에 저장하여 사용 (scope으로 다른 영역에 저장하여 사용 가능) -->
+	<c:url value="https://www.naver.com" var="naverUrl" />
+	
+	<div>
+		<a href="${naverUrl }">네이버</a>
+	</div>
+	<div>
+		<a href="${naverUrl }">네이버</a>
+	</div>
 	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
