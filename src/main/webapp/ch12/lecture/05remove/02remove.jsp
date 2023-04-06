@@ -11,17 +11,31 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
-	<c:set var="attr1" value="value1" />
-	<c:set var="attr2" value="value2" />
+	<p>remove 태그 사용 시 scope을 지정하지 않으면 모든 영역에서 삭제</p>
 	
-	<p>삭제전: ${attr1 }</p>
-	<p>삭제전: ${attr2 }</p>
+	<c:set var="attr1" value="value1" scope="page" />
+	<c:set var="attr1" value="value2" scope="request" />
+	<c:set var="attr1" value="value3" scope="session" />
+	<c:set var="attr1" value="value4" scope="application" />
 	
-	<c:set var="attr1" value="${alkdjflaj }" scope="page" />
-	<c:remove var="attr2" scope="page"/>
-	<p>삭제후: ${attr1 }</p>
-	<p>삭제후: ${attr2 }</p>
+	<div>
+		<p>삭제 전</p>
+		<p>${pageScope.attr1 }</p>
+		<p>${requestScope.attr1 }</p>
+		<p>${sessionScope.attr1 }</p>
+		<p>${applicationScope.attr1 }</p>
+	</div>
 	
+	<hr />
+	<!-- scope 생략하면 모든 영역 삭제되니 주의 -->
+	<c:remove var="attr1" scope="session" />
+	<div>
+		<p>삭제 후</p>
+		<p>${pageScope.attr1 }</p>
+		<p>${requestScope.attr1 }</p>
+		<p>${sessionScope.attr1 }</p>
+		<p>${applicationScope.attr1 }</p>
+	</div>
 	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

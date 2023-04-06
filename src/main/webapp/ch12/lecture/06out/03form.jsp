@@ -11,16 +11,11 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
-	<c:set var="attr1" value="value1" />
-	<c:set var="attr2" value="value2" />
-	
-	<p>삭제전: ${attr1 }</p>
-	<p>삭제전: ${attr2 }</p>
-	
-	<c:set var="attr1" value="${alkdjflaj }" scope="page" />
-	<c:remove var="attr2" scope="page"/>
-	<p>삭제후: ${attr1 }</p>
-	<p>삭제후: ${attr2 }</p>
+	<h1>3번 파일</h1>
+	<form action="04process.jsp">
+		이름 : <input type="text" name="username" size="300"/>
+		<input type="submit" value="전송" />
+	</form>
 	
 	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
