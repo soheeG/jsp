@@ -11,15 +11,15 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpFilter;
 
 /**
- * Servlet Filter implementation class Filter08
+ * Servlet Filter implementation class Filter13
  */
-@WebFilter(filterName = "filter08")
-public class Filter08 extends HttpFilter implements Filter {
+@WebFilter("/lec/sub1/*")
+public class Filter13 extends HttpFilter implements Filter {
        
     /**
      * @see HttpFilter#HttpFilter()
      */
-    public Filter08() {
+    public Filter13() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,11 +37,9 @@ public class Filter08 extends HttpFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		// place your code here
-		System.out.println("8번 필터 일함");
+		System.out.println("13번 필터");
 		// pass the request along the filter chain
 		chain.doFilter(request, response);
-		
-		System.out.println("8번 필터 응답 시 일함");
 	}
 
 	/**
